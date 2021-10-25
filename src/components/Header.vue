@@ -9,8 +9,8 @@
       </div>
     </div>
     <div class="profile-title">
-      <h2>Apisit Sianglert</h2>
-      <h3>Software Development Lead</h3>
+      <h2 class="animate__animated animate__bounceInRight">Apisit Sianglert</h2>
+      <h3 class="animate__animated animate__bounceInLeft">Software Development Lead</h3>
     </div>
   </div>
 </template>
@@ -21,6 +21,7 @@
   flex-direction: row;
   position: absolute;
   width: 100%;
+  max-width: 918px;
   align-items: center;
   z-index: 1;
 
