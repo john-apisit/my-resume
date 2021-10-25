@@ -27,6 +27,8 @@ export default class Profile extends Vue {}
 <style lang="scss" scoped>
 .page {
   background: linear-gradient(90deg, rgb(240, 138, 240), rgb(126, 162, 216));
+  width: 918px;
+  margin: 0px auto;
 
   .container {
     clip-path: polygon(0 95px, 100% 186px, 100% 100%, 0% 100%);

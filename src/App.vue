@@ -12,6 +12,9 @@
   font-family: 'Roboto';
 }
 
+#app{
+}
+
 .summary-title {
   display: flex;
   flex-direction: column;
