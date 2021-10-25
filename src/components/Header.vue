@@ -10,7 +10,9 @@
     </div>
     <div class="profile-title">
       <h2 class="animate__animated animate__bounceInRight">Apisit Sianglert</h2>
-      <h3 class="animate__animated animate__bounceInLeft">Software Development Lead</h3>
+      <h3 class="animate__animated animate__bounceInLeft">
+        Software Development Lead
+      </h3>
     </div>
   </div>
 </template>
@@ -28,6 +30,13 @@
   .profile-picture {
     flex: 1;
     padding: 0px 20px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      transform: scale(3) translate(15%, 25%);
+      transition-duration: 0.4s;
+      transition-timing-function: ease;
+    }
 
     .img-boder {
       margin-left: 54px;

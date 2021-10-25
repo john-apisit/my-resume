@@ -127,6 +127,13 @@ export default class Summary extends Vue {
         height: 100%;
         background-color: #2196f3;
         border-radius: 6px;
+
+        &:hover{
+          transform: scale(1, 1.2);
+          transition-duration: 0.01s;
+          transition-timing-function: ease;
+        }
+
         &.score-bar-50 {
           width: 50%;
         }
@@ -143,7 +150,7 @@ export default class Summary extends Vue {
           width: 90%;
         }
         &.score-bar-100 {
-          width: 90%;
+          width: 100%;
         }
       }
     }
