@@ -3,8 +3,16 @@
     <h4>{{ position }}</h4>
     <div class="company">{{ company }} | {{ period }}</div>
     <ul>
-      <li v-for="r in responsibilities" :key="r">
-        <span v-if="r.title">{{ r.title }}</span>
+      <li v-for="(r, i) in responsibilities" :key="i">
+        <div v-if="r.title">
+          <span>{{ r.title }}</span>
+          <ul>
+            <li v-for="(s, j) in r.subTasks" :key="j">
+              <span>{{ s }}</span>
+            </li>
+          </ul>
+        </div>
+
         <span v-else>{{ r }}</span>
       </li>
     </ul>
