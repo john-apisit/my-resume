@@ -27,8 +27,8 @@ export default class Detail extends Vue {
   experiences = [
     {
       company: 'Lotus’s',
-      position: 'Software Development Lead (Permanent 1 yr 11 mos)',
-      period: 'Feb 2020 - Dec 2021',
+      position: 'Software Development Lead (Permanent 2 yrs 2 mos)',
+      period: 'Feb 2020 - March 2021',
       responsibilities: [
         'Manage team process, guide team about scrum activities. Lead scrum activities. e.g. Sprint Planning. Daily Scrum, Sprint Demo and Retrospective. Encourage the team to complete all sprint backlogs and guide the team how they can achieve their sprint goal.',
         'Delegate tasks to team and improve their working life balance.',
