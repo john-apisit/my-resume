@@ -3,14 +3,11 @@
     <div class="info">
       <div class="info-item">
         <i class="bi bi-geo-alt" />
-        <span
-          >89/1463 Perfect Park Rama 5-Bangyai Moo.5, Bang Mae Nang, Bang Yai,
-          Nonthaburi 11140 Thailand</span
-        >
+        <span>Bang Yai, Nonthaburi 11140 Thailand</span>
       </div>
       <div class="info-item">
         <i class="bi bi-phone-vibrate" />
-        <span>+66814362332</span>
+        <span>0814362332</span>
       </div>
       <div class="info-item">
         <i class="bi bi-envelope" />
@@ -128,7 +125,7 @@ export default class Summary extends Vue {
         background-color: #2196f3;
         border-radius: 6px;
 
-        &:hover{
+        &:hover {
           transform: scale(1, 1.2);
           transition-duration: 0.01s;
           transition-timing-function: ease;
