@@ -17,6 +17,22 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
 import Experience from '@/components/Experience.vue'
+import dayjs from 'dayjs'
+
+const diffMonth = (from: string | Date, to: string | Date): string => {
+  const diffMonth = dayjs(to).diff(from, 'months')
+  const years = diffMonth / 12
+  const months = diffMonth % 12
+  if (years > 0) {
+    if (months > 0) {
+      return `${years} yrs ${months} mos`
+    } else {
+      return `${years} yrs`
+    }
+  } else {
+    return `${months} mos`
+  }
+}
 
 @Options({
   components: {
@@ -27,8 +43,11 @@ export default class Detail extends Vue {
   experiences = [
     {
       company: 'Lotus’s',
-      position: 'Software Development Lead (Permanent 2 yrs 2 mos)',
-      period: 'Feb 2020 - March 2021',
+      position: `Software Development Lead (Permanent ${diffMonth(
+        '2020-02-01',
+        new Date()
+      )})`,
+      period: 'Feb 2020 - Feb 2022',
       responsibilities: [
         'Manage team process, guide team about scrum activities. Lead scrum activities. e.g. Sprint Planning. Daily Scrum, Sprint Demo and Retrospective. Encourage the team to complete all sprint backlogs and guide the team how they can achieve their sprint goal.',
         'Delegate tasks to team and improve their working life balance.',

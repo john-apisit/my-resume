@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap-icons": "^1.6.1",
     "core-js": "^3.6.5",
+    "dayjs": "^1.10.7",
     "vue": "^3.0.0",
     "vue-class-component": "^8.0.0-0",
     "vue-property-decorator": "^9.1.2",
